@@ -1,0 +1,193 @@
+/* TYPOGRAPGY */
+
+body {
+  background-color: WhiteSmoke;
+  font-family: 'Source Code Pro', monospace;
+  overflow: hidden;
+  font-size: 12pt;
+}
+
+h1{
+  padding-top: 0;
+  font-size: 21pt;
+  line-height: 24pt;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 15pt;
+  line-height: 18pt;
+  font-weight: 200;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover {
+  color: gold;
+}
+
+/* CONTAINER */
+
+#container {
+  width: 500px;
+  height: 350px;
+  border: 1px solid Silver;
+  margin: 200px auto 200px auto;
+  padding: 40px;
+  background-image: linear-gradient(to bottom right, Grey, WhiteSmoke);
+}
+
+#container:hover {
+  box-shadow: 0px 0px 30px gold;
+}
+
+#container .back {
+  position: relative;
+  float: right;
+  top: 110px;
+}
+
+#container .about {
+  position: relative;
+  float: right;
+  top: 30px;
+}
+
+#container .exercise {
+  margin-top: 5px;
+}
+
+/* STARS */
+
+.A,.B,.C,.D,.E,.F,.G,.H {
+  position: absolute;
+}
+
+.A {
+  left: 80vw;
+  top: 20vh;
+  font-size: 36pt;
+}
+
+.B {
+  left: 65vw;
+  top: 40vh;
+  font-size: 28pt;
+}
+
+.C {
+  left: 55vw;
+  top: 10vh;
+  font-size: 24pt;
+}
+
+.D {
+  left: 40vw;
+  top: 80vh;
+  font-size: 36pt;
+}
+
+.E {
+  left: 30vw;
+  top: 55vh;
+  font-size: 28pt;
+}
+
+.F {
+  left: 25vw;
+  top: 65vh;
+  font-size: 20pt;
+}
+
+.G {
+  left: 5vw;
+  top: 30vh;
+  font-size: 28pt;
+}
+
+.H {
+  left: 85vw;
+  top: 75vh;
+  font-size: 24pt;
+}
+
+.I {
+  left: 2vw;
+  top: 5vh;
+  font-size: 36pt;
+}
+
+.star1 {
+  left: 0;
+  top: 0;
+  float:left;
+  position: absolute;
+  -webkit-animation: star 1.3s infinite;
+  animation-delay: 0s;
+}
+.star2 {
+  left: 350px;
+  top: -200px;
+  float:left;
+  position: absolute;
+  -webkit-animation: star 1.7s infinite;
+  animation-delay: 0.4s;
+}
+.star3 {
+  left: -250px;
+  top: 80px;
+  float:left;
+  position: absolute;
+  -webkit-animation: star 1s infinite;
+  animation-delay: 0.8s;
+}
+.star4 {
+  left: 550px;
+  top: 100px;
+  float:left;
+  position: absolute;
+  -webkit-animation: star 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes star {
+  0% {opacity: 0}
+  50% {opacity: 100}
+  100% {opacity: 0}
+}
+
+/* INPUT */
+
+input[type=text],textarea {
+  width: 250px;
+  padding:5px;
+  border: 1px solid black;
+  resize: vertical;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: inherit;
+  outline: none;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+input[type=text]:focus {
+  background-color: WhiteSmoke;
+  cursor: text;
+}
+
+/* MARQUEE */
+
+marquee {
+  -webkit-marquee-repetition: infinite;
+}

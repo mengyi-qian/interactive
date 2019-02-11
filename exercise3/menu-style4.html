@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jake's Diggity Dogs</title>
+    <style>
+
+
+    body {
+      overflow: hidden;
+    	font-family: Arial;
+    	font-size: 15pt;
+      cursor: zoom-in;
+      margin: 0px;
+    }
+
+    li {
+      list-style: none;
+      opacity: 0;
+      padding: 50px;
+    }
+
+    li:hover {
+      opacity: 100;
+    }
+
+    .A,.B,.C,.D,.E,.F,.G {
+      float: left;
+      position: absolute;
+    }
+
+    .first,.second,.third,.fourth,.fifth,.sixth,.seventh {
+      position: relative;
+    }
+
+    .A {
+      left: 42vw;
+      top: 18vh;
+    }
+
+    .B {
+      left: 1vw;
+      top: 35vh;
+    }
+
+    .C {
+      left: 60vw;
+      top: 6vh;
+    }
+
+    .D {
+      left: 22vw;
+      top: 12vh;
+    }
+
+    .E {
+      left: 36vw;
+      top: 25vh;
+    }
+
+    .F {
+      left: 10vw;
+      top: 3vh;
+    }
+
+    .G {
+      left: 60vw;
+      top: 32vh;
+    }
+
+    .first {
+      left: 5vh;
+      top: 5vw;
+      color: DarkOrange;
+    }
+
+    .second {
+      left: 6vh;
+      top: 22vw;
+      color: DarkOrange;
+    }
+
+    .third {
+      left: 12vh;
+      top: 16vw;
+      color: DarkOrange;
+    }
+
+    .fourth {
+      left: 0vh;
+      top: 13vw;
+      color: DarkOrange;
+    }
+
+    .fifth {
+      left: 18vh;
+      top: 9vw;
+      color: DarkOrange;
+    }
+
+    .sixth {
+      left: 36vh;
+      top: 2vw;
+      color: HotPink;
+    }
+
+    .seventh {
+      left: 24vh;
+      top: 15vw;
+      color: ForestGreen;
+    }
+
+    .dot-top-left {
+      height: 30px;
+      width: 30px;
+      background-color: DarkOrange;
+      border-radius: 50%;
+      display: flex;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+
+    .dot-top-right {
+      height: 30px;
+      width: 30px;
+      background-color: HotPink;
+      border-radius: 50%;
+      display: flex;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .dot-bottom-right {
+      height: 30px;
+      width: 30px;
+      background-color: ForestGreen;
+      border-radius: 50%;
+      display: flex;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .dot-bottom-left {
+      height: 30px;
+      width: 30px;
+      background-color: DodgerBlue;
+      border-radius: 50%;
+      display: flex;
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    #ABOUT {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-animation: color 1s infinite;
+      display: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    em {
+      font-size: 24pt;
+      line-height: 36pt;
+    }
+
+    span {
+      cursor: pointer;
+    }
+
+    @-webkit-keyframes color {
+      0%   {color: HotPink;}
+      25%  {color: DarkOrange;}
+      50%  {color: ForestGreen;}
+      75%  {color: DodgerBlue;}
+      100% {color: HotPink;}
+    }
+
+    .dropdown1 {
+      position: relative;
+      display: flex;
+    }
+
+    .content1 {
+      display: none;
+      position: fixed;
+      color: DarkOrange;
+      left: 50px;
+      top: 16px;
+      font-size: 15pt;
+    }
+
+    .dropdown1:hover .content1 {
+      display: flex;
+    }
+
+    .dropdown2 {
+      position: relative;
+      display: flex;
+    }
+
+    .content2 {
+      display: none;
+      position: fixed;
+      color: HotPink;
+      right: 50px;
+      top: 16px;
+      font-size: 15pt;
+      text-align: right;
+    }
+
+    .dropdown2:hover .content2 {
+      display: flex;
+    }
+
+    .dropdown3 {
+      position: relative;
+      display: flex;
+    }
+
+    .content3 {
+      display: none;
+      position: fixed;
+      color: ForestGreen;
+      right: 50px;
+      bottom: 12px;
+      font-size: 15pt;
+      text-align: right;
+
+    }
+
+    .dropdown3:hover .content3 {
+      display: flex;
+    }
+
+    .dropdown4 {
+      position: relative;
+      display: flex;
+    }
+
+    .content4 {
+      display: none;
+      position: fixed;
+      color: DodgerBlue;
+      bottom: 12px;
+      left: 50px;
+      font-size: 15pt;
+    }
+
+    .dropdown4:hover .content4 {
+      display: flex;
+    }
+
+    .title {
+      font-style: italic;
+      padding: 10px;
+    }
+
+    #ABOUT:target {
+      display: block;
+    }
+
+    @media screen and (min-width: 0px) {
+      .title {
+        color: HotPink;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      .title {
+        color: DarkOrange;
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      .title {
+        color: ForestGreen;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      .title {
+        color: DodgerBlue;
+      }
+    }
+
+    </style>
+  </head>
+
+
+  <body>
+    <div class="dropdown1">
+      <span class="dot-top-left"></span>
+      <span class="content1">HOT DOGS</span>
+    </div>
+    <div class="dropdown2">
+      <span class="dot-top-right"></span>
+      <span class="content2">TOPPINGS</span>
+    </div>
+    <div class="dropdown3">
+      <span class="dot-bottom-right"></span>
+      <span class="content3">DRINKS</span>
+    </div>
+    <div class="dropdown4">
+      <span class="dot-bottom-left"></span>
+      <span class="content4">MOCHI ICE CREAM</span>
+    </div>
+
+    <center class="title">
+      <a href="#ABOUT">Jake's Diggity Dogs</a>
+    </center>
+
+    <ul class="first">
+      <li class="A">SMALL DOG ($2.95)</li>
+      <li class="B">DA PLAIN ($3.95)</li>
+      <li class="C">ALL AMERICAN ($5.95)</li>
+      <li class="D">THE MAC ($4.95)</li>
+      <li class="E">CHICAGO ($4.95)</li>
+      <li class="F">NEW YORKER ($4.95)</li>
+      <li class="G">SAY CHEESE ($4.95)</li>
+    </ul>
+    <ul class="second">
+      <li class="A">BACONATOR ($6.95)</li>
+      <li class="B">REUBEN ($7.95)</li>
+      <li class="C">SEATTLE ($6.95)</li>
+      <li class="D">SOUTHERNER ($7.95)</li>
+      <li class="E">PHILLY CHEESESTEAK ($7.95)</li>
+      <li class="F">CHICKEN PHILLY ($7.95)</li>
+      <li class="G">CHICKEN YERIYAKI ($6.95)</li>
+    </ul>
+    <ul class="third">
+      <li class="A">THE TEX ($7.95)</li>
+      <li class="B">THE MEX ($6.95)</li>
+      <li class="C">CHIP DOG ($7.95)</li>
+      <li class="D">HAWAIIAN ($6.95)</li>
+      <li class="E">THE DELI ($6.95)</li>
+      <li class="F">SATURDAY NIGHT SPECIAL ($6.95)</li>
+      <li class="G">SLOPPY JAKES ($7.95)</li>
+    </ul>
+    <ul class="fourth">
+      <li class="A">DAILY DOUBLE ($7.95)</li>
+      <li class="B">THREE DOG NIGHT ($9.95)</li>
+      <li class="C">THE VOLCANO ($14.95)</li>
+      <li class="D">THE NO-DOG DOG ($4.95)</li>
+      <li class="E">B"EGG"ONATER ($8.95)</li>
+      <li class="F">VEGGIE DOG ($6.95)</li>
+      <li class="G">STEAMED 1/2POUND STEAK BURGER ($9.95)</li>
+    </ul>
+    <ul class="fifth">
+      <li class="A">BASIC BREAKFAST ($3.95)</li>
+      <li class="B">SLEEPY DOG ($7.95)</li>
+      <li class="C">WAKE UP DOG ($9.95)</li>
+      <li class="D">FRENCH FRIES ($5.95)</li>
+    </ul>
+
+    <ul class="sixth">
+      <li class="A">MUSTARD (FREE)</li>
+      <li class="B">RELISH (FREE)</li>
+      <li class="C">FREE TOPPINGS</li>
+      <li class="D">$1.00 TOPPINGS</li>
+      <li class="E">$1.50 TOPPINGS</li>
+      <li class="F">$2.50 TOPPINGS</li>
+    </ul>
+
+
+    <ul class="seventh">
+      <li class="A">CANNED SODA ($1.50)</li>
+      <li class="B">CANNED SODA ($1.50)</li>
+      <li class="C">SNAPPLES ($2.50)</li>
+      <li class="D">IZZIE ($2.50)</li>
+      <li class="E">HOMES T ($2.50)</li>
+      <li class="F">GATORADES ($2.50)</li>
+    </ul>
+
+    <ul class="seventh" style="color:DodgerBlue">
+      <li class="G">MOCHI ICE CREAM ($1.80/piece)</li>
+    </ul>
+
+    <a href="menu-style2.html">
+    <center id="ABOUT">
+      <em>Jake's Diggity Dogs</em>
+      <br>34 TOPPINGS, 10 MUSTARDS, 4 RELISHES, 2 HOT DOG ROLL OF FLAVORS
+      <br>PLUS DELICIOUS MOCHI ICE CREAM FROM HAWAII!
+      <br>WE DELIVER use <a href="https://www.grubhub.com/restaurant/jakes-diggity-dogs-216-crown-st-new-haven/318657"><u>Grubhub.com</u></a>
+      or <a href="https://www.ubereats.com/en-US/connecticut/food-delivery/jakes-diggity-dogs/q4DeA2yARFmXikZ4Jt_kMg/"><u>UberEats.com</u></a>
+      <br> <br>2 LOCATIONS!!
+      <br>New Haven: 216 Crown St (203-782-1111)
+      <br>NH Hours: Sun&Mon 11a.m.-8p.m., Tue&Wed 11a.m.-8p.m.,Thu 11a.m.-2p.m., Fri&Sat 11a.m.-3a.m.
+      <br>Branford: 49 Leetes Island Rd (203-208-2005)
+      <br>Branford Hours: Sun 6a.m.-2p.m., Mon-Sat 6a.m.-7p.m.
+    </center>
+    </a>
+
+  </body>
+</html>

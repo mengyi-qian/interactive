@@ -2,31 +2,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exercise 2. HTML</title>
+    <title>Exercise 2. CSS Basics</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <link rel="stylesheet" href="../assets/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <style media="screen">
+
+    body {
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    </style>
   </head>
   <body>
-    <h1>Exercise 2. HTML</h1>
-    <table>
-      <tr>
-        <td>
-          <ul>
-            <li><a href="menu-style1.html">menu-style1</a></li>
-            <li><a href="menu-style2.html">menu-style2</a></li>
-            <li><a href="menu-style3.html">menu-style3</a></li>
-          </ul>
-        <td>
-          <ul>
-          <li><a href="writing-style1.html">writing-style1</a></li>
-          <li><a href="writing-style2.html">writing-style2</a></li>
-          <li><a href="writing-style3.html">writing-style3</a></li>
-          </ul>
-        </td>
-    </table>
-    </tbody>
-    <a href="../index.html">Back</a>
-    <br>
+
+        <div id="container">
+
+          <marquee behavior="alternate" scrollamount="10">
+            Exercise 2. CSS Basics
+          </marquee>
+          <br> <br>
+          <p>
+            <button class="exercise"><a href="menu-style1.html">menu-style1</a></button><br>
+            <button class="exercise"><a href="menu-style2.html">menu-style2</a></button><br>
+            <button class="exercise"><a href="menu-style3.html">menu-style3</a></button><br>
+            <br>
+            <button class="exercise"><a href="writing-style1.html">writing-style1</a></button><br>
+            <button class="exercise"><a href="writing-style2.html">writing-style2</a></button><br>
+            <button class="exercise"><a href="writing-style3.html">writing-style3</a></button><br>
+          </p>
+
+          <button class="back">
+            <a href="../index.html">Back</a>
+          </button>
+
+        </div>
+
   </body>
 </html>

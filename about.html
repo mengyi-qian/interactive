@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <link rel="stylesheet" href="assets/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <style media="screen">
+
+    body {
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    </style>
   </head>
   <body>
-    <h1>About</h1>
-    Three facts:
-    <ol>
-      <li>
-        🇨🇳
-      </li>
-      <li>
-        🐱
-      </li>
-      <li>
-        🌈
-      </li>
-    </ol>
-    <a href="index.html">Back</a>
-    <br>
+    <div id="container">
+      <marquee behavior="alternate" scrollamount="10">
+        ✨Mengyi Qian✨
+      </marquee>
+
+    <p>
+      <u><a href="mailto:mengyi.qian@yale.edu?subject=feedback">email</a></u>
+      <br>
+      <u><a href="https://www.instagram.com/mengyi_qian/">instagram</a></u>
+      <form action="/action_page.php" novalidate>
+        Leave a message:<br>
+        <input type="text" name="message">
+        <input type="submit">
+      </form>
+    </p>
+
+    <button class="back">
+      <a href="index.html">Back</a>
+    </button>
+
+  </div>
+
   </body>
 </html>

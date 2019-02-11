@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jake's Diggity Dogs</title>
+    <style>
+
+    @font-face {
+      font-family: 'P.T. Barnum';
+      src: url('fonts/P.T.Barnum/ptbarnum-webfont.eot');
+      src: url('fonts/P.T.Barnum/ptbarnum-webfont.eot?#iefix') format('embedded-opentype'),
+          url('fonts/P.T.Barnum/ptbarnum-webfont.woff2') format('woff2'),
+          url('fonts/P.T.Barnum/ptbarnum-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-image: url("noise.gif");
+      background-attachment: fixed;
+      background-repeat: repeat;
+    	font-family: Arial;
+    	font-size: 15pt;
+    	line-height: 18pt;
+    	font-weight: normal;
+    	font-style: normal;
+    	font-variant-ligatures: common-ligatures;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: antialiased;
+    	-o-font-smoothing: antialiased;
+    	color: #FFFFFF;
+    	text-shadow: 0px 0px 10px white;
+    }
+
+    #content {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 50px;
+    }
+
+    a{
+      color: #FFFFFF;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      cursor: pointer;
+      display: block;
+      text-indent: 50pt;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    li:hover {
+	    font-family: "P.T. Barnum", Helvetica, Arial, sans-serif;
+	    font-size: 42pt;
+	    line-height: 45pt;
+      padding-top: 8pt;
+	    font-weight: normal;
+	    font-style: normal;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-family: 'P.T. Barnum';
+      font-size: 28pt;
+      line-height: 32pt;
+      padding-bottom: 4pt;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-family: 'P.T. Barnum';
+      font-size: 42pt;
+      line-height: 45pt;
+      padding-top: 8pt;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 1px;
+    }
+
+    .note {
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .note:hover {
+      cursor: auto;
+      font-family: Arial;
+    	font-size: 15pt;
+    	line-height: 18pt;
+      padding-top: 0;
+      font-style: italic;
+      letter-spacing: normal;
+      text-decoration: underline;
+    }
+
+    p {
+      visibility: hidden;
+      position:fixed;
+      top: 40%;
+      left: 30%;
+      overflow:visible;
+      max-width:35%;
+      max-height:35%;
+    }
+
+    p:hover {
+      -webkit-transform: rotate(360deg);
+      transition-duration: 2s;
+    }
+
+    .mochi {
+      display: block;
+    }
+
+    p.mochi:hover{
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-timing-function: ease-out;
+      -webkit-transform: translateY(-420px)
+    }
+
+    :target {
+      visibility: visible;
+      font-family: "P.T. Barnum", Helvetica, Arial, sans-serif;
+      font-size: 42pt;
+	    line-height: 45pt;
+      padding-top: 8pt;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 1px;
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-timing-function: ease-out;
+    }
+
+    .tags {
+      float: right;
+      position: fixed;
+      right: 50px;
+      top: 60px;
+      text-align: right;
+    }
+
+    .tags:visited {
+      font-family: "P.T. Barnum", Helvetica, Arial, sans-serif;
+	    font-size: 42pt;
+	    line-height: 45pt;
+      padding-top: 8pt;
+	    font-weight: normal;
+	    font-style: normal;
+      letter-spacing: 1px;
+    }
+
+    #ABOUT {
+      margin-bottom: 50px;
+      margin-top: 400px;
+      font-family: "P.T. Barnum", Helvetica, Arial, sans-serif;
+	    font-size: 42pt;
+	    line-height: 45pt;
+      padding-top: 8pt;
+	    font-weight: normal;
+	    font-style: normal;
+      letter-spacing: 1px;
+    }
+
+    marquee {
+      direction: left;
+      overflow: hidden;
+      font-family: "P.T. Barnum", Helvetica, Arial, sans-serif;
+      font-size: 42pt;
+      line-height: 45pt;
+    }
+
+
+
+    </style>
+  </head>
+
+
+  <body>
+    <ul class="tags">
+      <li><a href="#MENU">MENU</a></li>
+      <li><a href="#ABOUT">ABOUT</a></li>
+    </ul>
+
+    <marquee loop:"-1" scrollamount="30">Jake's Diggity Dogs</marquee>
+
+    <div id="content">
+
+
+    <h1>PLUS MOCHI!</h1>
+    <h1>34 TOPPINGS, 10 MUSTARDS, 4 RELISHES, 2 HOT DOG ROLL OF FLAVORS</h1>
+    <h1>INCL: PLAIN & EVERYTHING*</h1>
+
+    <h2 id="MENU">HOT DOGS & MORE</h2>
+    <ul>
+      <li><a href="#SMALLDOG">SMALL DOG ($2.95)</a></li>
+      <li><a href="#DAPLAIN">DA PLAIN ($3.95)</a></li>
+      <li><a href="#ALLAMERICAN">ALL AMERICAN ($5.95)</a></li>
+      <li><a href="#THEMAC">THE MAC ($4.95)</a></li>
+      <li><a href="#CHICAGO">CHICAGO ($4.95)</a></li>
+      <li><a href="#NEWYORKER">NEW YORKER ($4.95)</a></li>
+      <li><a href="#SAYCHEESE">SAY CHEESE ($4.95)</a></li>
+      <li><a href="#BACONATOR">BACONATOR ($6.95)</a></li>
+      <li><a href="#REUBEN">REUBEN ($7.95)</a></li>
+      <li><a href="#SEATTLE">SEATTLE ($6.95)</a></li>
+      <li><a href="#SOUTHERNER">SOUTHERNER ($7.95)</a></li>
+      <li><a href="#PHILLYCHEESESTEAK">PHILLY CHEESESTEAK ($7.95)</a></li>
+      <li><a href="#CHICKENPHILLY">CHICKEN PHILLY ($7.95)</a></li>
+      <li><a href="#CHICKENYERIYAKI">CHICKEN YERIYAKI ($6.95)</a></li>
+      <li><a href="#THETEX">THE TEX ($7.95)</a></li>
+      <li><a href="#THEMEX">THE MEX ($6.95)</a></li>
+      <li><a href="#CHIPDOG">CHIP DOG ($7.95)</a></li>
+      <li><a href="#HAWAIIAN">HAWAIIAN ($6.95)</a></li>
+      <li><a href="#THEDELI">THE DELI ($6.95)</a></li>
+      <li><a href="#SATURDAYNIGHTSPECIAL">SATURDAY NIGHT SPECIAL ($6.95)</a></li>
+      <li><a href="#SLOPPYJAKES">SLOPPY JAKES ($7.95)</a></li>
+      <li><a href="#DAILYDOUBLE">DAILY DOUBLE ($7.95)</a></li>
+      <li><a href="#THREEDOGNIGHT">THREE DOG NIGHT ($9.95)</a></li>
+      <li><a href="#THEVOLCANO">THE VOLCANO ($14.95)</a></li>
+      <li><a href="#THENODOGDOG">THE NO-DOG DOG ($4.95)</a></li>
+      <li><a href="#BEGGONATER">B"EGG"ONATER ($8.95)</a></li>
+      <li><a href="#VEGGIEDOG">VEGGIE DOG ($6.95)</a></li>
+      <li><a href="#STEAMEDSTEAKBURGER">STEAMED 1/2POUND STEAK BURGER ($9.95)</a></li>
+      <li><a href="#BASICBREAKFAST">BASIC BREAKFAST ($3.95)</a></li>
+      <li><a href="#SLEEPYDOG">SLEEPY DOG ($7.95)</a></li>
+      <li><a href="#WAKEUPDOG">WAKE UP DOG ($9.95)</a></li>
+      <li><a href="#FRENCHFRIES">FRENCH FRIES ($5.95)</a></li>
+    </ul>
+    <center>
+      <p id="SMALLDOG">6” dog topped with choice of any cold topping</p>
+      <p id="DAPLAIN">Foot long dog with choice of an cold topping</p>
+      <p id="ALLAMERICAN">Topped with chili, cheese, chopped onions, tomatoes, pickle, mustard, relish</p>
+      <p id="THEMAC">Topped with macaroni and cheese</p>
+      <p id="CHICAGO">Topped with tomato, Chicago green relish, onions, sport peppers, pickle spear, celery salt</p>
+      <p id="NEWYORKER">Topped with red onion sauce, spicy brown mustard, kraut</p>
+      <p id="SAYCHEESE">Smothered with cheese, choice of any cold topping</p>
+      <p id="BACONATOR">Topped with bacon & cheese and any choice of cold topping</p>
+      <p id="REUBEN">Topped with pastrami and swiss cheese and choice of sauerkraut or coleslaw and any cold topping</p>
+      <p id="SEATTLE">Topped with cream cheese and bacon and choice of any cold topping</p>
+      <p id="SOUTHERNER">Topped with chili and cole slaw</p>
+      <p id="PHILLYCHEESESTEAK">Hot Dog topped with steak & cheese with choice of cold topping</p>
+      <p id="CHICKENPHILLY">Hot Dog topped with chicken & cheese with any cold topping</p>
+      <p id="CHICKENYERIYAKI">Sautéed in homemade teriyaki sauce</p>
+      <p id="THETEX">Hot Dog topped with chili, bacon, bbq sauce and choice of any cold topping</p>
+      <p id="THEMEX">Hot Dog topped with guacamole, salsa, jalapenos, tomatoes, onions and choice of any cold topping</p>
+      <p id="CHIPDOG">Topped with either FRITOS, CHEETOS, DORITOS, GOLDFISH or LAYS CLASSIC, chili, cheese, onion and any cold topping</p>
+      <p id="HAWAIIAN">Hot Dog topped with diced pineapple & coconut shavings</p>
+      <p id="THE DELI">Hot Dog topped with cole slaw, Russian dressing and choice of any cold topping</p>
+      <p id="SATURDAYNIGHTSPECIAL">Hot Dog topped with beans and cheese</p>
+      <p id="SLOPPYJAKES">2 SLICED dogs smothered in beans & cheese with choice of any cold topping-served in a bowl, NO bun</p>
+      <p id="DAILYDOUBLE">2 Hot Dogs with choice of 2 hot toppings and any cold topping wrapped in a soft burrito</p>
+      <p id="THREEDOGNIGHT">3 Hot Dogs with choice of 2 hot toppings and any cold topping wrapped in a soft burrito</p>
+      <p id="THEVOLCANO">2 Georgia Hots topped with philly cheesesteak</p>
+      <p id="THENODOGDOG">Mac & cheese mixed with sweet peppers, onions, tomato and pickles—NO DOG</p>
+      <p id="BEGGONATER">Hot Dog with 2 eggs, bacon, cheese and any cold topping</p>
+      <p id="VEGGIEDOG">Vegetarian delight topped with any cold topping</p>
+      <p id="STEAMEDSTEAKBURGER">With any cold topping</p>
+      <p id="BASICBREAKFAST">Bacon, egg and cheese on a hardroll - no hotdog</p>
+      <p id="SLEEPYDOG">Hot Dog with bacon, egg and cheese on a hardroll</p>
+      <p id="WAKEUPDOG">Georgia Hot with bacon, egg & cheese on a hardroll</p>
+      <p id="FRENCHFRIES">One size only</p>
+    </center>
+
+    <h2>TOPPINGS</h2>
+    <ul>
+      <li><a href="#MUSTARD">MUSTARD CHOICES (FREE)</a></li>
+      <li><a href="#RELISH">RELISH CHOICES (FREE)</a></li>
+      <li><a href="#FREE">TOPPINGS (FREE)</a></li>
+      <li><a href="#1.00">TOPPINGS ($1.00)</a></li>
+      <li><a href="#1.50">TOPPINGS ($1.50)</a></li>
+      <li><a href="#2.50">TOPPINGS ($2.50)</a></li>
+      <li class="note">*ANY DOG ALSO AVAILABLE IN A TO-GO BOWL</li>
+    </ul>
+    <center>
+      <p id="MUSTARD">Yellow, Spicy Deli Brown, Dijon, Honey</p>
+      <p id="RELISH">Sweet, Dill, Spicy, Chicago Green</p>
+      <p id="FREE">Mustard, Ketchup, Relish, Tomato, Onion, Sauerkraut, Pickles, Sweet Peppers, Jalapenos, Mayonnaise, Russian Dressing, BBQ Sauce, A-1 Sauce, Sriracha Sauce, Banana Peppers, Sport Peppers</p>
+      <p id="1.00">Chili, Beans, Mac & Cheese, American Cheese, Swiss Cheese, Cream Cheese</p>
+      <p id="1.50">Pineapple, Coconut</p>
+      <p id="2.50">Bacon, Pastrami, Cole Slaw</p>
+    </center>
+
+    <h2>DRINKS</h2>
+    <ul>
+      <li>BOTTLED WATER / CANNED SODA ($1.50)</li>
+      <li>SNAPPLES / IZZIE / HOMES T / GATORADES ($2.50)</a></li>
+    </ul>
+
+    <h2>PLUS DELICIOUS MOCHI ICE CREAM FROM HAWAII!</h2>
+    <ul>
+      <li><a href="#19FLAVORS">19 FLAVORS ($1.80/piece)</a></li>
+    </ul>
+    <center>
+      <p id="19FLAVORS", class="mochi">BLUEBERRY, CHOCOLATE COCONUT, CHOCOLATE ESPRESSO, CHOCOLATE MINT, CHOCOLATE PEANUT BUTTER, GUAVA, LI HING MANGO, LYCHEE, MANGO, PASSION FRUIT, PISTACHIO, RED VELVET, RASPBERRY WHITE CHOCOLATE, SAKURA, STRAWBERRY, STRAWBERRY DARK CHOCOLATE CHIP, TRIPLE CHOCOLATE, VANILLA</p>
+    </center>
+
+
+    <div id="ABOUT">
+      WE DELIVER use <a href="https://www.grubhub.com/restaurant/jakes-diggity-dogs-216-crown-st-new-haven/318657">Grubhub.com</a>
+      or <a href="https://www.ubereats.com/en-US/connecticut/food-delivery/jakes-diggity-dogs/q4DeA2yARFmXikZ4Jt_kMg/">UberEats.com</a>
+      <br> <br>2 LOCATIONS!!
+      <br>New Haven: 216 Crown St (203-782-1111)
+      <br>NH Hours: Sun&Mon 11a.m.-8p.m., Tue&Wed 11a.m.-8p.m.,Thu 11a.m.-2p.m., Fri&Sat 11a.m.-3a.m.
+      <br>Branford: 49 Leetes Island Rd (203-208-2005)
+      <br>Branford Hours: Sun 6a.m.-2p.m., Mon-Sat 6a.m.-7p.m.
+      <br> <br>Our website: <a href="http://www.jakesdiggitydogs.com">www.jakesdiggitydogs.com</a>
+      <br> <br>
+      <br>Source from <a href="http://perambulatingbookshop.werkplaatstypografie.org/catalogue/">werkplaats typografie catalogue</a>.
+    </div>
+
+
+    </div>
+
+  </body>
+</html>
