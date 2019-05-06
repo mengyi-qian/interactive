@@ -14,6 +14,21 @@
 		line-height: 50px;
 		margin: 100px;
 		margin-top: 100px;
+		margin-bottom: 0px;
+		background: black;
+		height: 2000px;
+		overflow: ;
+	}
+
+	img, video {
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+		border: ridge 2px silver;
+		display: block;
+		z-index: 1;
+		-webkit-filter: grayscale(100%) sepia(100%) hue-rotate(5deg);
+		transition: 0.3s all;
 	}
 
 	* {
@@ -22,6 +37,9 @@
 		clear: both;
 	}
 
+	.hover {
+		z-index: 99;
+	}
 
 	.plus {
 		left: 3vw;
@@ -33,15 +51,15 @@
 		top: -250px;
 	}
 
+	.container {
+		position: absolute;
+	}
 
-	img, video {
-		width: 300px;
-		height: 300px;
-		object-fit: cover;
-		border: ridge 2px black;
-		display: block;
-		/* padding: 50px;
-		background-color: white; */
+	#insta {
+		position: absolute;
+		height:3200px;
+		width: 100vw;
+		overflow-y: hidden;
 	}
 
 	.date {
@@ -59,6 +77,7 @@
 </head>
 
 <body>
+<div id="insta">
 
 			<div>
 				<img src="image/201902/86971fe75e9c8a6cb77e62805e4b0400.jpg">
@@ -81,7 +100,14 @@
 												<div class="plus">
 													<img src="image/201812/bd73ac6bcc268e67bc9b641601a4ff2b.jpg">
 													<div class="plus">
-														<img src="image/201812/a90f69cd5c72c7d652974835076b3668.jpg">
+														<img src="image/201812/a90f69cd5c72c7d652974835076b3668.jpg" >
+														<img class="container" id="a" src="image/201812/1e2f0e4f00bebed5ce7d0bee3183dc16.jpg">
+														<img class="container" id="b" src="image/201812/312a58403e10c232dc81d1edc319a733.jpg">
+														<img class="container" id="c" src="image/201812/5cba26364579f03c7c73af261ff09dda.jpg">
+														<img class="container" id="d" src="image/201812/47d78b763e3573a9607c22d034475a3d.jpg">
+														<img class="container" id="e" src="image/201812/68c91b6ebc44075f799ca30b73060280.jpg">
+														<img class="container" id="f" src="image/201812/bc73a72563ec592a05eafcf80a5c81ce.jpg">
+														<img class="container" id="g" src="image/201812/04330c3c3e459f890c3cd5e306650cae.jpg">
 														<div class="plus">
 															<img src="image/201812/3e2521069f957b3f21cba0ff8be598a3.jpg">
 															<div class="plus">
@@ -90,6 +116,7 @@
 																	<img src="image/201812/1b24bc2519957ea43aac72de8ee6d73f.jpg">
 																	<div class="plus">
 																		<img src="image/201811/985115610b2b50bccff9d845a1471bc8.jpg">
+																		<img class="container" id="h" src="image/201811/819556d9112c7dda265e6cefa91b4061.jpg">
 																		<div class="plus">
 																			<img src="image/201811/c99aeb87e063df300a7bd0c3b027b327.jpg">
 																			<div class="plus">
@@ -104,12 +131,23 @@
 																								<img src="image/201811/94d38168767c10b83f7d94de525c1b73.jpg">
 																								<div class="plus">
 																									<img src="image/201811/dfbbf6448c3c947476bfbd9c9c6fb440.jpg">
+																									<img class="container" id="i" src="image/201811/4798161d13ffd21df1171d8213c1fe90.jpg">
+																									<img class="container" id="j" src="image/201811/09baf3d155d4865fef326361f05224c7.jpg">
+																									<img class="container" id="k" src="image/201811/8dd2dc088fc84f49d3066dddb1942160.jpg">
+																									<img class="container" id="l" src="image/201811/c12fa9d4fff09b2c7373178f62a835d9.jpg">
 																									<div class="plus">
 																										<img src="image/201810/9eb1c37cd4c49d550a3caefe2b1eae9b.jpg">
+																										<img class="container" id="m" src="image/201810/733b01f582f91bf3e9a9206b95a67c01.jpg">
+																										<img class="container" id="n" src="image/201810/f6aaa6b6eaf4702c5e6ef3e73a38a37e.jpg">
+																										<img class="container" id="o" src="image/201810/22a687092cc866a5fe61a4bca506e9ed.jpg">
+																										<img class="container" id="p" src="image/201810/b258aea68fee4130cfa5cb46f54c7eed.jpg">
+																										<img class="container" id="q" src="image/201810/6308bcff4b75b6abf3c233125db95327.jpg">
+																										<img class="container" id="r" src="image/201810/f388b8a06a00c73cf3895c01d612daa4.jpg">
 																										<div class="plus">
 																											<img src="image/201810/2c07cbd27e082019462c9ce8026fd98a.jpg">
 																											<div class="minus">
 																												<img src="image/201810/cf394e0644a89386173409a95e65bdba.jpg">
+																												<img class="container" id="s" src="image/201810/8905a11cd0d4c5d45cc9dcc441e24a31.jpg">
 																												<div class="minus">
 																													<img src="image/201810/0f83a3254225c967179946bd9c48194b.jpg">
 																													<div class="minus">
@@ -134,16 +172,19 @@
 																																							<img src="image/201809/5cfc257ba9249dd091392b14a40ddd7a.jpg">
 																																							<div class="minus">
 																																								<img src="image/201809/a102e44e849205405eae9363bd6f6be7.jpg">
+																																								<img class="container" id="t" src="image/201809/ee227bebee3d2f869a14ea5f505288c4.jpg">
 																																								<div class="minus">
 																																									<img src="image/201809/387aa877495f1d4657b32e0d32f66575.jpg">
 																																									<div class="minus">
 																																										<img src="image/201809/2657bfeee30e9edb21be76550e4028dd.jpg">
 																																										<div class="minus">
 																																											<img src="image/201809/1aaa33c864e5a8be2d14f95f1570f078.jpg">
+																																											<img class="container" id="u" src="image/201809/bb2c0e344de3dffd3c49195a9fa67bd9.jpg">
 																																											<div class="minus">
 																																												<img src="image/201809/930ad0d03281fc0646e060a4039586b2.jpg">
 																																												<div class="minus">
 																																													<img src="image/201809/9a9defb1edd6d8c607819a4b8ceb9503.jpg">
+																																													<img class="container" id="v" src="image/201809/6698c2528c17a1283cbc2fcad3f840c8.jpg">
 																																													<div class="minus">
 																																														<img src="image/201809/3c0a3bbe406b2b5b2d5ad84bf7dd6cc9.jpg">
 																																														<div class="minus">
@@ -224,119 +265,7 @@
 <script src="js/ins2.js"></script>
 
 
-
-
-
-
-
-			<div class="imgbox">
-				<img src="image/201812/a90f69cd5c72c7d652974835076b3668.jpg">
-				<img src="image/201812/1e2f0e4f00bebed5ce7d0bee3183dc16.jpg">
-				<img src="image/201812/312a58403e10c232dc81d1edc319a733.jpg">
-				<img src="image/201812/5cba26364579f03c7c73af261ff09dda.jpg">
-				<img src="image/201812/47d78b763e3573a9607c22d034475a3d.jpg">
-				<img src="image/201812/68c91b6ebc44075f799ca30b73060280.jpg">
-				<img src="image/201812/bc73a72563ec592a05eafcf80a5c81ce.jpg">
-				<img src="image/201812/04330c3c3e459f890c3cd5e306650cae.jpg">
-			</div>
-
-
-
-		<div>
-			<div class="date">
-				2018-11-16
-			</div>
-			<div class="imgbox">
-				<img src="image/201811/985115610b2b50bccff9d845a1471bc8.jpg">
-				<img src="image/201811/819556d9112c7dda265e6cefa91b4061.jpg">
-			</div>
-		</div>
-
-
-		<div>
-			<div class="date">
-				2018-11-01
-			</div>
-			<div class="imgbox">
-				<img src="image/201811/dfbbf6448c3c947476bfbd9c9c6fb440.jpg">
-				<img src="image/201811/4798161d13ffd21df1171d8213c1fe90.jpg">
-				<img src="image/201811/09baf3d155d4865fef326361f05224c7.jpg">
-				<img src="image/201811/8dd2dc088fc84f49d3066dddb1942160.jpg">
-				<img src="image/201811/c12fa9d4fff09b2c7373178f62a835d9.jpg">
-			</div>
-		</div>
-
-		<div>
-			<div class="date">
-				2018-10-27
-			</div>
-			<div class="imgbox">
-				<img src="image/201810/9eb1c37cd4c49d550a3caefe2b1eae9b.jpg">
-				<img src="image/201810/733b01f582f91bf3e9a9206b95a67c01.jpg">
-				<img src="image/201810/f6aaa6b6eaf4702c5e6ef3e73a38a37e.jpg">
-				<img src="image/201810/22a687092cc866a5fe61a4bca506e9ed.jpg">
-				<img src="image/201810/b258aea68fee4130cfa5cb46f54c7eed.jpg">
-				<img src="image/201810/6308bcff4b75b6abf3c233125db95327.jpg">
-				<img src="image/201810/f388b8a06a00c73cf3895c01d612daa4.jpg">
-			</div>
-		</div>
-
-
-		<div>
-			<div class="date">
-				2018-10-26
-			</div>
-			<div class="imgbox">
-				<img src="image/201810/cf394e0644a89386173409a95e65bdba.jpg">
-				<img src="image/201810/8905a11cd0d4c5d45cc9dcc441e24a31.jpg">
-			</div>
-		</div>
-
-
-		<div>
-			<div class="date">
-				2018-09-22
-			</div>
-			<div class="imgbox">
-				<img src="image/201809/a102e44e849205405eae9363bd6f6be7.jpg">
-				<img src="image/201809/ee227bebee3d2f869a14ea5f505288c4.jpg">
-			</div>
-		</div>
-
-
-
-		<div>
-			<div class="date">
-				2018-09-16
-			</div>
-			<div class="imgbox">
-				<img src="image/201809/1aaa33c864e5a8be2d14f95f1570f078.jpg">
-				<img src="image/201809/bb2c0e344de3dffd3c49195a9fa67bd9.jpg">
-			</div>
-		</div>
-
-
-		<div>
-			<div class="date">
-				2018-09-14
-			</div>
-			<div class="imgbox">
-				<img src="image/201809/9a9defb1edd6d8c607819a4b8ceb9503.jpg">
-				<img src="image/201809/6698c2528c17a1283cbc2fcad3f840c8.jpg">
-			</div>
-		</div>
-
-
-
-
-	</div>
-
-
-
-
-
-
-
+</div>
 
 </body>
 

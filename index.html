@@ -11,17 +11,8 @@
 
     <style media="screen">
 
-      body {
-        font-family: 'Source Code Pro', monospace;
-      }
-
-      button {
-        transition: -webkit-transform 1s;
-        display: inline;
-      }
-
-      button:hover {
-        -webkit-transform: translate(400px,-200px);
+      .list {
+        list-style-type: circle;
       }
 
     </style>
@@ -29,54 +20,49 @@
   </head>
 
   <body>
-  <ul class="star1">
-    <li class="A"><a href="exercise2/writing-style2.html">✨</a></li>
-    <li class="B"><a href="exercise5/instagram1.html">✨</a></li>
-    <li class="C"><a href="https://payload.cargocollective.com/1/8/263793/3760876/1.BalloonANGLE.jpg">✨</a></li>
-    <li class="D"><a href="exercise2/writing-style1.html">✨</a></li>
-    <li class="E"><a href="https://66.media.tumblr.com/2adb9a6de01573c809813446163f8ca3/tumblr_ninex9Fi301sjvgiao1_640.jpg">✨</a></li>
-    <li class="F"><a href="exercise4/still-life1.html">✨</a></li>
-    <li class="G"><a href="exercise2/writing-style3.html">✨</a></li>
-    <li class="H"><a href="exercise1/writing-html.html">✨</a></li>
-    <li class="I"><a href="#">✨</a></li>
-  </ul>
-  <ul class="star2">
-    <li class="A"><a href="#">✨</a></li>
-    <li class="B"><a href="exercise2/menu-style2.html">✨</a></li>
-    <li class="C"><a href="exercise2/menu-style1.html">✨</a></li>
-    <li class="D"><a href="exercise4/organism.html">✨</a></li>
-    <li class="E"><a href="exercise6/still-life-1/still-life-1.html">✨</a></li>
-    <li class="F"><a href="#">✨</a></li>
-    <li class="G"><a href="https://66.media.tumblr.com/79ca113fec73ea9b37c80f2e74123007/tumblr_nj28l80sqU1tumiwho1_400.jpg">✨</a></li>
-    <li class="H"><a href="#">✨</a></li>
-    <li class="I"><a href="#">✨</a></li>
-  </ul>
-  <ul class="star3">
-    <li class="A"><a href="exercise3/menu-style4.html">✨</a></li>
-    <li class="B"><a href="exercise3/writing-style5.html">✨</a></li>
-    <li class="C"><a href="#">✨</a></li>
-    <li class="D"><a href="https://66.media.tumblr.com/b20a2eed5653b4b52c220f2f78a393d5/tumblr_n4cnfchkE11ql2d4po1_1280.jpg">✨</a></li>
-    <li class="E"><a href="exercise1/menu-html.html">✨</a></li>
-    <li class="F"><a href="exercise3/writing-style4.html">✨</a></li>
-    <li class="G"><a href="#">✨</a></li>
-    <li class="H"><a href="exercise4/still-life2.html">✨</a></li>
-    <li class="I"><a href="#">✨</a></li>
-  </ul>
-  <ul class="star4">
-    <li class="A"><a href="#">✨</a></li>
-    <li class="B"><a href="#">✨</a></li>
-    <li class="C"><a href="https://66.media.tumblr.com/6f961f67817ff5b12449efafe7abdf79/tumblr_pnnhdeEJkr1tyy77ko1_540.jpg">✨</a></li>
-    <li class="D"><a href="#">✨</a></li>
-    <li class="E"><a href="https://66.media.tumblr.com/76b04c66d3ad80d1cfa8056886f99601/tumblr_n1zqvj8W4T1qdo93ko1_1280.jpg">✨</a></li>
-    <li class="F"><a href="exercise3/menu-style2-2.html">✨</a></li>
-    <li class="G"><a href="#">✨</a></li>
-    <li class="H"><a href="#">✨</a></li>
-    <li class="I"><a href="exercise2/menu-style3.html">✨</a></li>
-  </ul>
+  <div id="stars">
+    <ul class="star1">
+      <li class="A"><a href="exercise2/writing-style2.html">✨</a></li>
+      <li class="B"><a href="exercise5/instagram1.html">✨</a></li>
+      <li class="C"><a href="exercise2/menu-style3.html">✨</a></li>
+      <li class="D"><a href="exercise2/writing-style1.html">✨</a></li>
+      <li class="E"><a href="exercise3/menu-style2-2.html">✨</a></li>
+      <li class="F"><a href="exercise4/still-life1.html">✨</a></li>
+      <li class="G"><a href="exercise2/writing-style3.html">✨</a></li>
+      <li class="H"><a href="exercise1/writing-html.html">✨</a></li>
+      <li class="I"><a href="exercise2/menu-style1.html">✨</a></li>
+    </ul>
+    <ul class="star2">
+      <li class="B"><a href="exercise2/menu-style2.html">✨</a></li>
+      <li class="D"><a href="exercise4/organism.html">✨</a></li>
+      <li class="E"><a href="exercise6/still-life-1/still-life-1.html">✨</a></li>
+      <li class="F" id="switch">✨</li>
+      <li class="G"><a href="http://172.27.125.78:8888/webzine/">✨</a></li>
+    </ul>
+    <ul class="star3">
+      <li class="A"><a href="exercise3/menu-style4.html">✨</a></li>
+      <li class="B"><a href="exercise3/writing-style5.html">✨</a></li>
+      <li class="C"><a href="exercise5/instagram2.html">✨</a></li>
+      <li class="D"><a href="#">✨</a></li>
+      <li class="E"><a href="exercise1/menu-html.html">✨</a></li>
+      <li class="F"><a href="exercise3/writing-style4.html">✨</a></li>
+      <li class="H"><a href="exercise4/still-life2.html">✨</a></li>
+    </ul>
+    <ul class="star4">
+      <li class="B"><a href="exercise2/writing-style2.html">✨</a></li>
+      <li class="C"><a href="exercise3/menu-style4.html">✨</a></li>
+      <li class="D"><a href="exercise3/writing-style5.html">✨</a></li>
+      <li class="E"><a href="exercise4/still-life2.html">✨</a></li>
+      <li class="F"><a href="exercise5/instagram1.html">✨</a></li>
+      <li class="G"><a href="exercise6/still-life-1/still-life-1.html">✨</a></li>
+      <li class="I"><a href="http://172.27.125.78:8888/webzine/">✨</a></li>
+    </ul>
+  </div>
+
 
   <div id="container">
-    <button class="about"><a href="about.html">About</a></button>
-    <h1>Mengyi's Class Website</h1>
+    <button class="close">&#215;</button>
+    <h1><a href="about.html">Mengyi's Class Website</a></h1>
     <h2>Exercises</h2>
     <ol>
       <li><a href="exercise1/index.html">HTML</a></li>
@@ -87,8 +73,18 @@
       <li><a href="exercise6/index.html">JavaScript & jQuery</a></li>
     </ol>
     <h2>Final Project</h2>
-    To come...
+    <ul class="list">
+      <li><a href="http://172.27.125.78:8888/webzine/">Webzine - Language Trader</a></li>
+    </ul>
   </div>
+
+
+
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/index.js"></script>
+
+
+
 
   </body>
 </html>

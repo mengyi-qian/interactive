@@ -1,0 +1,63 @@
+body {
+  overflow: hidden;
+}
+
+p {
+  font-family: serif;
+  color: white;
+  font-size: 20px;
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#textarea {
+height: 70%;
+width: 40%;
+position: absolute;
+top: 25%;
+left: 30%;
+overflow-y: scroll;
+overflow-x: wrap;
+
+}
+
+#textarea2 {
+height: 70%;
+width: 40%;
+position: absolute;
+top: 25%;
+left: 10%;
+overflow-y: scroll;
+overflow-x: wrap;
+z-index: -100;
+
+}
+
+#outside {
+  margin: 0px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+
+#inside {
+  margin: 0px;
+  width: calc(100vw - 60px);
+  width: -moz-calc(100vw - 60px);
+  width: -webkit-calc(100vw - 60px);
+  width: -o-calc(100vw - 60px);
+  height: calc(100vh - 60px);
+  height: -moz-calc(100vh - 60px);
+  height: -webkit-calc(100vh - 60px);
+  height: -o-calc(100vh - 60px);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
