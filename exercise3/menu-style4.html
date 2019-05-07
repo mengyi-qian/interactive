@@ -22,7 +22,7 @@
     }
 
     li:hover {
-      opacity: 100;
+      opacity: 1;
     }
 
     .A,.B,.C,.D,.E,.F,.G {
@@ -111,7 +111,13 @@
       color: ForestGreen;
     }
 
-    .dot-top-left {
+    .eighth {
+      left: 24vh;
+      top: 15vw;
+      color: DodgerBlue;
+    }
+
+    #dot-top-left {
       height: 30px;
       width: 30px;
       background-color: DarkOrange;
@@ -122,7 +128,7 @@
       left: 10px;
     }
 
-    .dot-top-right {
+    #dot-top-right {
       height: 30px;
       width: 30px;
       background-color: HotPink;
@@ -133,7 +139,7 @@
       right: 10px;
     }
 
-    .dot-bottom-right {
+    #dot-bottom-right {
       height: 30px;
       width: 30px;
       background-color: ForestGreen;
@@ -144,7 +150,7 @@
       right: 10px;
     }
 
-    .dot-bottom-left {
+    #dot-bottom-left {
       height: 30px;
       width: 30px;
       background-color: DodgerBlue;
@@ -302,19 +308,19 @@
 
   <body>
     <div class="dropdown1">
-      <span class="dot-top-left"></span>
+      <span id="dot-top-left"></span>
       <span class="content1">HOT DOGS</span>
     </div>
     <div class="dropdown2">
-      <span class="dot-top-right"></span>
+      <span id="dot-top-right"></span>
       <span class="content2">TOPPINGS</span>
     </div>
     <div class="dropdown3">
-      <span class="dot-bottom-right"></span>
+      <span id="dot-bottom-right"></span>
       <span class="content3">DRINKS</span>
     </div>
     <div class="dropdown4">
-      <span class="dot-bottom-left"></span>
+      <span id="dot-bottom-left"></span>
       <span class="content4">MOCHI ICE CREAM</span>
     </div>
 
@@ -384,7 +390,7 @@
       <li class="F">GATORADES ($2.50)</li>
     </ul>
 
-    <ul class="seventh" style="color:DodgerBlue">
+    <ul class="eighth">
       <li class="G">MOCHI ICE CREAM ($1.80/piece)</li>
     </ul>
 
@@ -402,6 +408,9 @@
       <br>Branford Hours: Sun 6a.m.-2p.m., Mon-Sat 6a.m.-7p.m.
     </center>
     </a>
+
+    <script src="jquery.min.js"></script>
+    <script src="menu4.js"></script>
 
   </body>
 </html>
